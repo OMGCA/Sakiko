@@ -1,0 +1,13 @@
+{
+  "name": "main",
+  "version": "1.0.0",
+  "description": "Please describe the basic information.",
+  "main": "",
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "kmpsakiko": "file:../KMPSakiko",
+    "@kuiklybase/knoi": "^0.0.4"
+  }
+}
+
