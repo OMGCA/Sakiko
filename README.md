@@ -1,5 +1,16 @@
 # Sakiko
 
+直接看效果
+
+A. 业务代码使用Kotlin实现
+![img.png](readme_src/img_3.png)
+
+B. ArkTS代码通过knoi接口调用Kotlin代码
+![img_1.png](readme_src/img_1.png)
+
+C. 运行结果
+![img_2.png](readme_src/img_2.png)
+
 change 1:
 A special Kotlin version provided by Tencent is reqruied to enable ohosArm64 compilation. The follwing has been done to accompany this:
 
@@ -9,7 +20,7 @@ A special Kotlin version provided by Tencent is reqruied to enable ohosArm64 com
 
 note 1:
 OHOS *so library linking task needs to be configured manually
-![img.png](img.png)
+![img.png](readme_src/img.png)
 
 change 2:
 Declare dependency of ksp and knoi for auto generate kt/native-ohos bridge
