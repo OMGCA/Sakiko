@@ -11,4 +11,12 @@ open class SakikoProvider {
     public fun getFirstname(): String {
         return "Sakiko";
     }
+
+    public fun getFullname(): String {
+        return "Sakiko Togawa";
+    }
+
+    public fun getSourceDate(): String {
+        return "2.14";
+    }
 }

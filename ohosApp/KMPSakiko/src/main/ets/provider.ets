@@ -9,6 +9,10 @@ export interface SakikoProvider {
 
    getFirstname(): string;
 
+   getFullname(): string;
+
+   getSourceDate(): string;
+
 }
 
 export function getSakikoProvider(): SakikoProvider {

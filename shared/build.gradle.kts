@@ -50,3 +50,17 @@ android {
         minSdk = libs.versions.android.minSdk.get().toInt()
     }
 }
+
+tasks.register<Copy>("copyOhosIntf") {
+    from("./build/ts-api/provider.ets")
+    into("../ohosApp/KMPSakiko/src/main/ets")
+}
+
+tasks.register<Copy>("copyOhosLib") {
+    from("./build/bin/ohosArm64/debugShared/libshared.so")
+    into("../ohosApp/KMPSakiko/libs/arm64-v8a")
+}
+
+tasks.named("linkOhosArm64") {
+    finalizedBy("copyOhosIntf", "copyOhosLib")
+}
