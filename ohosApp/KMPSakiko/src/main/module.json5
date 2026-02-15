@@ -1,0 +1,9 @@
+{
+  "module": {
+    "name": "KMPSakiko",
+    "type": "har",
+    "deviceTypes": [
+      "default"
+    ]
+  }
+}
