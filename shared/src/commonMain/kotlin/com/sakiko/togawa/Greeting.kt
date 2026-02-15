@@ -3,7 +3,9 @@ package com.sakiko.togawa
 class Greeting {
     private val platform = getPlatform()
 
+    private val saki = Sakiko()
+
     fun greet(): String {
-        return "Hello, ${platform.name}!"
+        return "Hello, ${this.saki.getFullname()}!"
     }
 }
