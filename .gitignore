@@ -30,3 +30,11 @@ replay_pid*
 .idea/
 build/*
 **/build/*
+ohosApp/oh-package-lock.json5
+ohosApp/**/oh-package-lock.json5
+**/.hvigor
+**/.hvigor
+**/node_modules
+**/oh_modules
+**/.preview
+**/BuildProfile.ets
