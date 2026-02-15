@@ -10,3 +10,6 @@ A special Kotlin version provided by Tencent is reqruied to enable ohosArm64 com
 note 1:
 OHOS *so library linking task needs to be configured manually
 ![img.png](img.png)
+
+change 2:
+Declare dependency of ksp and knoi for auto generate kt/native-ohos bridge
