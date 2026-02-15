@@ -1,1 +1,8 @@
 # Sakiko
+
+change 1:
+A special Kotlin version provided by Tencent is reqruied to enable ohosArm64 compilation. The follwing has been done to accompany this:
+
+- Kotlin version - 2.0.21-KBA-010
+- CMP version - 1.7.0 (as higher version requires minimum Kt of 2.1.0)
+- Add Tencent maven repo

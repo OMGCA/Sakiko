@@ -6,6 +6,12 @@ plugins {
 }
 
 kotlin {
+    ohosArm64 {
+        binaries {
+            sharedLib()
+        }
+    }
+
     androidTarget {
         compilerOptions {
             jvmTarget.set(JvmTarget.JVM_11)

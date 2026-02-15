@@ -10,6 +10,9 @@ pluginManagement {
                 includeGroupAndSubgroups("com.google")
             }
         }
+        maven {
+            url = uri("https://mirrors.tencent.com/nexus/repository/maven-tencent/")
+        }
         mavenCentral()
         gradlePluginPortal()
     }
@@ -23,6 +26,9 @@ dependencyResolutionManagement {
                 includeGroupAndSubgroups("com.android")
                 includeGroupAndSubgroups("com.google")
             }
+        }
+        maven {
+            url = uri("https://mirrors.tencent.com/nexus/repository/maven-tencent/")
         }
         mavenCentral()
     }
