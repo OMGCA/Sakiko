@@ -22,7 +22,7 @@ C. 运行结果
 
 ### KMP工程构建任务配置
 参考如下图配置手动配置构建任务
-![img.png](readme_src/img.png)
+![img_7.png](readme_src/img_7.png)
 
 ### 生成Kotlin/Native - ArkTS桥接代码需在KMP工程中声明knoi依赖
 [接入参考](https://github.com/Tencent-TDS/KuiklyBase-components/blob/master/knoi/README-zh.md)
