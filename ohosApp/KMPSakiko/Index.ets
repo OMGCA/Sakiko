@@ -1,1 +1,1 @@
-export * from 'ets/provider'
+export * from './src/main/ets/provider'

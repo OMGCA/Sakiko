@@ -1,7 +1,13 @@
+import { getSakikoProvider } from 'kmpsakiko';
+
 @Entry
 @Component
 struct Index {
   @State message: string = 'Hello World';
+
+  public aboutToAppear(): void {
+    this.message = getSakikoProvider().getLastname()
+  }
 
   build() {
     RelativeContainer() {

@@ -5,6 +5,9 @@
   "main": "",
   "author": "",
   "license": "",
-  "dependencies": {}
+  "dependencies": {
+    "kmpsakiko": "file:../KMPSakiko",
+    "@kuiklybase/knoi": "^0.0.4"
+  }
 }
 
