@@ -8,14 +8,7 @@ B. ArkTS代码通过knoi接口调用Kotlin代码
 ![img_1.png](readme_src/img_1.png)
 
 C. 运行结果
-OHOS应用：
-![img_2.png](readme_src/img_2.png)
-
-安卓应用：
-![img_5.png](readme_src/img_5.png)
-
-iOS应用：
-![img_6.png](readme_src/img_6.png)
+![img.png](readme_src/img.png)
 
 ## 环境搭建踩过的坑
 ### Kotlin版本

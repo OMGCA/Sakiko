@@ -6,15 +6,15 @@ struct Index {
   @State message: string = 'Hello World';
 
   public aboutToAppear(): void {
-    this.message = getSakikoProvider().getSystemVer();
+    this.message = getSakikoProvider().getFullname();
   }
 
   build() {
     RelativeContainer() {
-      Text(this.message)
+      Text("ArkUI: Hello, " + this.message + "!")
         .id('HelloWorld')
-        .fontSize($r('app.float.page_text_font_size'))
-        .fontWeight(FontWeight.Bold)
+        .fontSize(14)
+        .fontWeight(FontWeight.Medium)
         .alignRules({
           center: { anchor: '__container__', align: VerticalAlign.Center },
           middle: { anchor: '__container__', align: HorizontalAlign.Center }
