@@ -14,6 +14,9 @@ OHOS应用：
 安卓应用：
 ![img_5.png](readme_src/img_5.png)
 
+iOS应用：
+![img_6.png](readme_src/img_6.png)
+
 ## 环境搭建踩过的坑
 ### Kotlin版本
 整体方案依赖腾讯的Kuikly方案，所以需要用到一个定制的Kotlin版本（2.0.21-KBA-010）用于在gradle中声明OHOS构建任务；与此同时，由于最新Compose Multiplatform支持的最小Kotlin版本为2.1.0，所以相应的需要降级（本工程使用1.7.0，但由于本身也没考虑做UI多平台，所以只要能编译过就行）
