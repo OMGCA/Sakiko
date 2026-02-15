@@ -6,7 +6,7 @@ struct Index {
   @State message: string = 'Hello World';
 
   public aboutToAppear(): void {
-    this.message = getSakikoProvider().getLastname()
+    this.message = getSakikoProvider().getSystemVer();
   }
 
   build() {

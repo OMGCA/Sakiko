@@ -13,6 +13,8 @@ export interface SakikoProvider {
 
    getSourceDate(): string;
 
+   getSystemVer(): string;
+
 }
 
 export function getSakikoProvider(): SakikoProvider {

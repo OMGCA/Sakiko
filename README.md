@@ -13,3 +13,6 @@ OHOS *so library linking task needs to be configured manually
 
 change 2:
 Declare dependency of ksp and knoi for auto generate kt/native-ohos bridge
+
+note 2:
+Hvigor acts funny when exporting custom d.ts file, so in the gradle there's a rename op to change consumer.d.ts to consumer.ets and tbh I'm lazy enough to investigate why
