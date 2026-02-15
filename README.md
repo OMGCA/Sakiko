@@ -2,7 +2,7 @@
 
 ## 直接看效果
 A. 业务代码使用Kotlin实现
-![img.png](readme_src/img_3.png)
+![img.png](readme_src/img.png)
 
 B. ArkTS代码通过knoi接口调用Kotlin代码
 ![img_1.png](readme_src/img_1.png)
