@@ -56,11 +56,17 @@ tasks.register<Copy>("copyOhosIntf") {
     into("../ohosApp/KMPSakiko/src/main/ets")
 }
 
+tasks.register<Copy>("copyOhosCsm") {
+    from("./build/ts-api/consumer.d.ts")
+    into("../ohosApp/KMPSakiko/src/main/ets")
+    rename("consumer.d.ts", "consumer.ets")
+}
+
 tasks.register<Copy>("copyOhosLib") {
     from("./build/bin/ohosArm64/debugShared/libshared.so")
     into("../ohosApp/KMPSakiko/libs/arm64-v8a")
 }
 
 tasks.named("linkOhosArm64") {
-    finalizedBy("copyOhosIntf", "copyOhosLib")
+    finalizedBy("copyOhosIntf", "copyOhosLib", "copyOhosCsm")
 }

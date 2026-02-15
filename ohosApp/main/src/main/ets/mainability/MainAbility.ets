@@ -1,7 +1,8 @@
 import { AbilityConstant, ConfigurationConstant, UIAbility, Want } from '@kit.AbilityKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 import { window } from '@kit.ArkUI';
-import { init, setup } from '@kuiklybase/knoi';
+import { init, registerServiceProvider, setup } from '@kuiklybase/knoi';
+import { SakikoCsmImpl } from '../SakikoCsmImpl';
 
 const DOMAIN = 0x0000;
 
@@ -9,6 +10,11 @@ export default class MainAbility extends UIAbility {
   private initKmp(): void {
     setup('libshared.so', true);
     init();
+    this.registerKmpService();
+  }
+
+  private registerKmpService(): void {
+    registerServiceProvider("SakikoConsumer", true, SakikoCsmImpl);
   }
 
   onCreate(want: Want, launchParam: AbilityConstant.LaunchParam): void {
