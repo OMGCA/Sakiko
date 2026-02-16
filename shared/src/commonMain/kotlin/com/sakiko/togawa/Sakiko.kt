@@ -20,4 +20,8 @@ class Sakiko {
     public fun getSystemVer(): String {
         return getPlatform().name
     }
+
+    public fun greetSakiko(): String {
+        return "desuwa!";
+    }
 }

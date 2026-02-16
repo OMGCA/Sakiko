@@ -2,7 +2,10 @@ package com.sakiko.togawa.service.provider
 
 import com.sakiko.togawa.Sakiko
 import com.sakiko.togawa.getPlatform
+import com.sakiko.togawa.service.callback.ISakikoListener
+import com.sakiko.togawa.service.callback.asISakikoListener
 import com.tencent.tmm.knoi.annotation.ServiceProvider
+import com.tencent.tmm.knoi.type.JSValue
 
 @ServiceProvider
 open class SakikoProvider (
@@ -26,5 +29,10 @@ open class SakikoProvider (
 
     public fun getSystemVer(): String {
         return getPlatform().name
+    }
+
+    public fun greetSakiko(listener: JSValue): Unit {
+        val listener: ISakikoListener = listener.asISakikoListener();
+        listener.onKtCalled(this.saki.greetSakiko());
     }
 }
