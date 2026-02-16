@@ -1,4 +1,4 @@
-import { getSakikoProvider } from 'kmpsakiko';
+import { getSakikoProvider, ISakikoListener } from 'kmpsakiko';
 
 @Entry
 @Component
@@ -7,6 +7,7 @@ struct Index {
 
   public aboutToAppear(): void {
     this.message = getSakikoProvider().getFullname();
+    getSakikoProvider().greetSakiko(new SakikoListener())
   }
 
   build() {
@@ -25,5 +26,11 @@ struct Index {
     }
     .height('100%')
     .width('100%')
+  }
+}
+
+class SakikoListener implements ISakikoListener {
+  public onKtCalled(msg: string): void {
+    console.info(`Sakiko says ${msg}`);
   }
 }

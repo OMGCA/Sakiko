@@ -15,6 +15,8 @@ export interface SakikoProvider {
 
    getSystemVer(): string;
 
+   greetSakiko(listener: object): void;
+
 }
 
 export function getSakikoProvider(): SakikoProvider {
